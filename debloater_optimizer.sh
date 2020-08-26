@@ -140,3 +140,4 @@ pm uninstall -k --user 0 com.google.android.apps.docs
 pm uninstall -k --user 0 com.facebook.katana
 pm uninstall -k --user 0 com.miui.compass
 pm uninstall -k --user 0 com.miui.huanji
+pm uninstall -k --user 0 com.miui.gallery
