@@ -110,3 +110,5 @@ pm uninstall -k --user 0 com.facebook.katana
 pm uninstall -k --user 0 com.miui.compass
 pm uninstall -k --user 0 com.miui.huanji
 pm uninstall -k --user 0 com.miui.gallery
+pm uninstall -k --user 0 com.android.updater
+pm uninstall -k --user 0 com.miui.hybrid
