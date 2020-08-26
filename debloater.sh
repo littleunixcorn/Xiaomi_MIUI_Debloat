@@ -1,39 +1,8 @@
 #!/system/bin/sh
-setenforce 0
-set enforce 0
-echo 'Y' > /sys/module/sync/parameters/fsync_enabled
-sysctl -w net.ipv4.tcp_congestion_control=cubic
-#echo '254 255 256' > /sys/devices/platform/kcal_ctrl.0/kcal
-#echo '1' > /sys/devices/platform/kcal_ctrl.0/kcal_enable
-#echo '290' > /sys/devices/platform/kcal_ctrl.0/kcal_sat
-#echo '261' > /sys/devices/platform/kcal_ctrl.0/kcal_val
-#echo '264' > /sys/devices/platform/kcal_ctrl.0/kcal_cont
-#echo '35' > /sys/devices/platform/kcal_ctrl.0/kcal_min
-#echo '0' > /sys/devices/platform/kcal_ctrl.0/kcal_hue
-echo 'Y' > /sys/module/wakeup/parameters/enable_timerfd_ws
-echo 'Y' > /sys/module/wakeup/parameters/enable_qpm uninstall -k --user 0 com_rx_wakelock_ws
-echo 'Y' > /sys/module/wakeup/parameters/enable_netlink_ws
-echo 'Y' > /sys/module/wakeup/parameters/enable_ipa_ws
-echo 'Y' > /sys/module/wakeup/parameters/enable_wlan_wake_ws
-echo 'Y' > /sys/module/wakeup/parameters/enable_wlan_ctrl_wake_ws
-echo 'Y' > /sys/module/wakeup/parameters/enable_wlan_rx_wake_ws
-echo 'Y' > /sys/module/wakeup/parameters/enable_msm_hsic_ws
-echo 'Y' > /sys/module/wakeup/parameters/enable_si_ws
-echo 'Y' > /sys/module/wakeup/parameters/enable_smb135x_wake_ws
-#echo '0' > /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
-#chmod 666 /sys/module/lowmemorykiller/parameters/minfree
-#chown root /sys/module/lowmemorykiller/parameters/minfree
-echo '16384,20736,24576,32256,85296,120640' > /sys/module/lowmemorykiller/parameters/minfree
-echo '75' > /proc/sys/vm/swappiness
-echo '17' > /proc/sys/vm/dirty_ratio
-#echo '0' > /sys/kernel/sched/gentle_fair_sleepers
-#echo '2830' > /sys/class/timed_output/vibrator/vtg_level
-echo '3' > /sys/kernel/power_suspend/power_suspend_mode
-echo '1' > /sys/kernel/fast_charge/force_fast_charge
+
 pm uninstall -k --user 0 com.miui.screenrecorder
 pm uninstall -k --user 0 com.miui.fm
 pm uninstall -k --user 0 com.miui.micloudsync
-pm uninstall -k --user 0 com.miui.pm uninstall -k --user 0 compass
 pm uninstall -k --user 0 com.miui.misound
 pm uninstall -k --user 0 com.miui.bugreport
 pm uninstall -k --user 0 com.miui.cloudservice
@@ -72,7 +41,7 @@ pm uninstall -k --user 0 com.google.android.overlay.gmsconfig
 pm uninstall -k --user 0 com.google.android.apps.turbo
 pm uninstall -k --user 0 com.google.android.syncadapters.contacts
 pm uninstall -k --user 0 com.google.android.marvin.talkback
-pm uninstall -k --user 0 com.google.android.printservice.repm uninstall -k --user 0 commendation
+pm uninstall -k --user 0 com.google.android.printservice
 pm uninstall -k --user 0 com.xiaomi.gameboosterglobal
 pm uninstall -k --user 0 com.facemoji.lite.xiaomi
 pm uninstall -k --user 0 com.mipay.wallet.in
