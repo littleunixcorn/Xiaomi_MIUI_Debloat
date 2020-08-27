@@ -1,5 +1,20 @@
 #!/system/bin/sh
 
+echo 0 > /proc/sys/vm/swappiness
+echo 3000 > /proc/sys/vm/dirty_expire_centisecs
+echo 500  > /proc/sys/vm/dirty_writeback_centisecs
+echo 10   > /proc/sys/vm/dirty_background_ratio
+echo 40   > /proc/sys/vm/dirty_ratio
+sysctl -w vm.oom_kill_allocating_task=1
+sysctl -w vm.vfs_cache_pressure=10
+sysctl -w net.core.somaxconn=1000
+sysctl -w net.core.netdev_max_backlog=5000
+sysctl -w net.core.rmem_max=16777216
+sysctl -w net.core.wmem_max=16777216
+sysctl -w net.ipv4.tcp_max_syn_backlog=8096
+sysctl -w net.ipv4.tcp_slow_start_after_idle=0
+sysctl -w net.ipv4.tcp_tw_reuse=1
+
 pm uninstall -k --user 0 com.miui.screenrecorder
 pm uninstall -k --user 0 com.miui.fm
 pm uninstall -k --user 0 com.miui.micloudsync
