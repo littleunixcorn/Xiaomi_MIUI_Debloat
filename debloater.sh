@@ -127,3 +127,4 @@ pm uninstall -k --user 0 com.miui.huanji
 pm uninstall -k --user 0 com.miui.gallery
 pm uninstall -k --user 0 com.miui.hybrid
 pm uninstall -k --user 0 com.miui.hybrid.accessory
+pm uninstall -k --user 0 com.mi.androidglobalminusscreen
