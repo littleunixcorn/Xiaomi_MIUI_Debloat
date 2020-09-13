@@ -15,6 +15,7 @@ sysctl -w net.ipv4.tcp_max_syn_backlog=8096
 sysctl -w net.ipv4.tcp_slow_start_after_idle=0
 sysctl -w net.ipv4.tcp_tw_reuse=1
 
+pm uninstall -k --user 0 com.miui.backup
 pm uninstall -k --user 0 com.xiaomi.mircs
 pm uninstall -k --user 0 com.miui.daemon
 pm uninstall -k --user 0 com.android.providers.partnerbookmarks
