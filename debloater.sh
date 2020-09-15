@@ -15,7 +15,7 @@ sysctl -w net.ipv4.tcp_max_syn_backlog=8096
 sysctl -w net.ipv4.tcp_slow_start_after_idle=0
 sysctl -w net.ipv4.tcp_tw_reuse=1
 
-pm uninstall -k --user 0 com.android.contacts # USE FDROID CONTACTS PRO
+pm uninstall -k --user 0 com.android.contacts # USE SIMPLE CONTACTS PRO INSTEAD
 pm uninstall -k --user 0 com.miui.backup
 pm uninstall -k --user 0 com.xiaomi.mircs
 pm uninstall -k --user 0 com.miui.daemon
@@ -130,7 +130,7 @@ pm uninstall -k --user 0 com.google.android.apps.docs
 pm uninstall -k --user 0 com.facebook.katana
 pm uninstall -k --user 0 com.miui.compass
 pm uninstall -k --user 0 com.miui.huanji
-pm uninstall -k --user 0 com.miui.gallery
+pm uninstall -k --user 0 com.miui.gallery # USE SIMPLE GALLERY PRO INSTEAD
 pm uninstall -k --user 0 com.miui.hybrid
 pm uninstall -k --user 0 com.miui.hybrid.accessory
 pm uninstall -k --user 0 com.mi.androidglobalminusscreen
