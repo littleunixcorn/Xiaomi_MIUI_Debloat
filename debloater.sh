@@ -15,6 +15,7 @@ sysctl -w net.ipv4.tcp_max_syn_backlog=8096
 sysctl -w net.ipv4.tcp_slow_start_after_idle=0
 sysctl -w net.ipv4.tcp_tw_reuse=1
 
+pm uninstall -k --user 0 com.google.android.apps.restore
 pm uninstall -k --user 0 com.xiaomi.glgm
 pm uninstall -k --user 0 com.android.managedprovisioning
 pm uninstall -k --user 0 com.android.contacts # USE SIMPLE CONTACTS PRO INSTEAD
