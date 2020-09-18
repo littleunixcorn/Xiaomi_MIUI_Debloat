@@ -15,6 +15,7 @@ sysctl -w net.ipv4.tcp_max_syn_backlog=8096
 sysctl -w net.ipv4.tcp_slow_start_after_idle=0
 sysctl -w net.ipv4.tcp_tw_reuse=1
 
+pm uninstall -k --user 0 com.qualcomm.atfwd
 pm uninstall -k --user 0 com.fingerprints.sensortesttool
 pm uninstall -k --user 0 com.qualcomm.qti.qmmi
 pm uninstall -k --user 0 com.google.android.setupwizard
