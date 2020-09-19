@@ -1,10 +1,5 @@
 #!/system/bin/sh
 
-su -c echo 0 > /proc/sys/vm/swappiness
-su -c echo 3000 > /proc/sys/vm/dirty_expire_centisecs
-su -c echo 500  > /proc/sys/vm/dirty_writeback_centisecs
-su -c echo 10   > /proc/sys/vm/dirty_background_ratio
-su -c echo 40   > /proc/sys/vm/dirty_ratio
 su -c sysctl -w vm.oom_kill_allocating_task=1
 su -c sysctl -w vm.vfs_cache_pressure=10
 su -c sysctl -w net.core.somaxconn=1000
