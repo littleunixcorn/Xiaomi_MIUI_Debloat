@@ -15,6 +15,7 @@ sysctl -w net.ipv4.tcp_max_syn_backlog=8096
 sysctl -w net.ipv4.tcp_slow_start_after_idle=0
 sysctl -w net.ipv4.tcp_tw_reuse=1
 
+pm uninstall -k --user 0 com.miui.vsimcore
 pm uninstall -k --user 0 com.qualcomm.uimremoteserver
 pm uninstall -k --user 0 com.qualcomm.embms
 pm uninstall -k --user 0 com.qualcomm.atfwd
