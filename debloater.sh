@@ -163,4 +163,4 @@ su -c pm uninstall -k --user 0 com.miui.huanji
 su -c pm uninstall -k --user 0 com.miui.gallery # USE SIMPLE GALLERY PRO INSTEAD
 su -c pm uninstall -k --user 0 com.miui.hybrid
 su -c pm uninstall -k --user 0 com.miui.hybrid.accessory
-su -c pm uninstall -k --user 0 com.mi.androidglobalminusscreen
+
