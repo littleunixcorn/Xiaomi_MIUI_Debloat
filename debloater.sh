@@ -10,6 +10,10 @@ su -c sysctl -w net.ipv4.tcp_max_syn_backlog=8096
 su -c sysctl -w net.ipv4.tcp_slow_start_after_idle=0
 su -c sysctl -w net.ipv4.tcp_tw_reuse=1
 
+su -c pm uninstall -k --user 0 com.android.egg
+su -c pm uninstall -k --user 0 com.android.providers.userdictionary
+su -c pm uninstall -k --user 0 com.android.calllogbackup
+su -c pm uninstall -k --user 0 com.google.android.onetimeinitializer
 su -c pm uninstall -k --user 0 com.miui.vsimcore
 su -c pm uninstall -k --user 0 com.qualcomm.uimremoteserver
 su -c pm uninstall -k --user 0 com.qualcomm.embms
@@ -124,6 +128,24 @@ su -c pm uninstall -k --user 0 com.android.deskclock
 su -c pm uninstall -k --user 0 com.milink.service
 su -c pm uninstall -k --user 0 com.xiaomi.account
 su -c pm uninstall -k --user 0 com.google.ar.core
+su -c pm uninstall -k --user 0 com.android.backupconfirm
+su -c pm uninstall -k --user 0 com.android.provision
+su -c pm uninstall -k --user 0 com.android.sharedstoragebackup
+su -c pm uninstall -k --user 0 com.xiaomi.location.fused
+su -c pm uninstall -k --user 0 com.android.bips
+su -c pm uninstall -k --user 0 com.xiaomi.joyose
+su -c pm uninstall -k --user 0 com.miui.audioeffect
+su -c pm uninstall -k --user 0 com.miui.enbbs
+su -c pm uninstall -k --user 0 com.mi.global.bbs
+su -c pm uninstall -k --user 0 com.miui.backup.transfer
+su -c pm uninstall -k --user 0 com.google.android.apps.docs
+su -c pm uninstall -k --user 0 com.facebook.katana
+su -c pm uninstall -k --user 0 com.miui.compass
+su -c pm uninstall -k --user 0 com.miui.huanji
+su -c pm uninstall -k --user 0 com.miui.gallery # USE SIMPLE GALLERY PRO INSTEAD
+su -c pm uninstall -k --user 0 com.miui.hybrid
+su -c pm uninstall -k --user 0 com.miui.hybrid.accessory
+su -c pm uninstall -k --user 0 com.mi.androidglobalminusscreen
 su -c pm uninstall -k --user 0 com.android.backupconfirm
 su -c pm uninstall -k --user 0 com.android.provision
 su -c pm uninstall -k --user 0 com.android.sharedstoragebackup
