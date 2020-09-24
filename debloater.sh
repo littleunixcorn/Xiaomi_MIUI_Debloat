@@ -10,6 +10,7 @@ su -c sysctl -w net.ipv4.tcp_max_syn_backlog=8096
 su -c sysctl -w net.ipv4.tcp_slow_start_after_idle=0
 su -c sysctl -w net.ipv4.tcp_tw_reuse=1
 
+su -c pm uninstall -k --user 0 com.android.mms # use simple messenger
 su -c pm uninstall -k --user 0 com.android.egg
 su -c pm uninstall -k --user 0 com.android.providers.userdictionary
 su -c pm uninstall -k --user 0 com.android.calllogbackup
