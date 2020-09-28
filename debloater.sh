@@ -1,5 +1,10 @@
 #!/system/bin/sh
 
+su -c setprop dalvik.vm.verify-bytecode false
+su -c setprop dalvik.vm.dexopt-flags v=n,o=v
+su -c rm /data/dalvik-cache/*
+su -c rm /cache/dalvik-cache/*
+su -c echo "windowsmgr.max_events_per_sec=500" >> /system/build.prop
 su -c sysctl -w vm.oom_kill_allocating_task=1
 su -c sysctl -w vm.vfs_cache_pressure=10
 su -c sysctl -w net.core.somaxconn=1000
