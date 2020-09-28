@@ -12,10 +12,6 @@ su -c setprop min_pointer_dur 8
 
 su -c setprop windowsmgr.max_events_per_sec 500
 
-su -c setprop ro.max.fling_velocity 12000
-
-su -c setprop ro.min.fling_velocity 8000
-
 su -c setprop net.tcp.buffersize.default 4096,87380,256960,4096,16384,256960
 
 su -c setprop net.tcp.buffersize.wifi 4096,87380,256960,4096,16384,256960
@@ -23,11 +19,9 @@ su -c setprop net.tcp.buffersize.wifi 4096,87380,256960,4096,16384,256960
 su -c setprop net.tcp.buffersize.umts 4096,87380,256960,4096,16384,256960
 
 su -c setprop net.tcp.buffersize.gprs 4096,87380,256960,4096,16384,256960
-su -c setprop net.tcp.buffersize.edge 4096,87380,256960,4096,163 84,256960
+su -c setprop net.tcp.buffersize.edge 4096,87380,256960,4096,16384,256960
 su -c setprop net.dns1 8.8.8.8
 su -c setprop net.dns2 8.8.4.4
-
-su -c setprop ro.config.hw_quickpoweron true
 
 su -c sysctl -w vm.oom_kill_allocating_task=1
 
@@ -47,13 +41,7 @@ su -c sysctl -w net.ipv4.tcp_slow_start_after_idle=0
 
 su -c sysctl -w net.ipv4.tcp_tw_reuse=1
 
-su -c sysctl -w profiler.force_disable_err_rpt=1
-
-su -c sysctl -w profiler.force_disable_ulog=1
-
 su -c setprop debug.performance.tuning 1
-
-su -c setprop ro.HOME_APP_ADJ 1
 
 su -c pm uninstall -k --user 0 com.android.mms
 
