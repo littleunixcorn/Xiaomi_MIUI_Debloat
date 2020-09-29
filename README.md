@@ -5,6 +5,3 @@ If you have any suggestions you can contact me [here](http://twitter.com/mindh4x
 
 # Warning
 I am not responsible of any bricked phones/systems.
-
-# Interesting
-https://forum.xda-developers.com/showthread.php?t=1437799
