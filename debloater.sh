@@ -23,7 +23,7 @@ su -c setprop net.tcp.buffersize.edge 4096,87380,256960,4096,16384,256960
 su -c setprop net.dns1 8.8.8.8
 su -c setprop net.dns2 8.8.4.4
 
-su -c ro.bat.capacity 8000mAh
+su -c setprop ro.bat.capacity 8000mAh
 
 su -c sysctl -w vm.oom_kill_allocating_task=1
 
