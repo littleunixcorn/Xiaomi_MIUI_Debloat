@@ -8,6 +8,8 @@ su -c rm -rf /data/dalvik-cache/*
 
 su -c rm -rf /cache/dalvik-cache/*
 
+su -c setprop audio.safemedia.bypass true
+
 su -c setprop min_pointer_dur 8
 
 su -c setprop windowsmgr.max_events_per_sec 500
