@@ -1,5 +1,7 @@
 #!/system/bin/sh
 
+su -c setprop touch.presure.scale "0.001"
+su -c setprop debug.egl.profiler "1"
 su -c setprop dalvik.vm.verify-bytecode false
 su -c setprop dalvik.vm.dexopt-flags v=n,o=v
 su -c rm -rf /data/dalvik-cache/*
