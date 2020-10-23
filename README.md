@@ -23,6 +23,7 @@ Want to help me to creating a better script ?
 
 Right !, you can make a [pull request](https://github.com/mindh4x/MIUI_Bloatwares/pulls) and describe what you did.
 
+*Pssst, visit [my guide](https://docs.google.com/document/d/1jLgMX_4OW_Sf7leqIPRvkGT005uDfY9LrJgSDsrq3cY/) too !*
 
 ### Warning
 
