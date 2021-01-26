@@ -1,7 +1,7 @@
 ![Bash](https://i2.wp.com/thepracticalsysadmin.com/wp-content/uploads/2017/12/bash1.png)
 
-*MIUI_Bloatwares is a debloater/optimizer script based on MIUI ROM v11.0.9.
-It makes your life more beautiful by helping your phone to be a Transformers.*
+*Xiaomi_MIUI_Debloat is a debloater/optimizer script based on MIUI ROM v11.0.9.
+It makes your life more beautiful by helping your phone to be a Transformer.*
 
 # New features
 
